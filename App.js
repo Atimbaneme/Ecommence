@@ -4,6 +4,7 @@ import Welcome from './screens/welcome';
 import Home from './screens/home';
 import Signin from './screens/sign in';
 import Create from './screens/create account';
+import Detail1 from './screens/Detail1';
 
 
 
@@ -12,7 +13,7 @@ import Create from './screens/create account';
 export default function App() {
   return (
     
-   <Home />
+   <Detail1 />
 
   );
 }

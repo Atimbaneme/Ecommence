@@ -8,7 +8,18 @@ import { Entypo } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function Home() {
-  const image = { uri: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80" };
+  const image = { uri: "https://images.unsplash.com/photo-1560184897-67f4a3f9a7fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80" };
+  const image1 = { uri: "https://images.unsplash.com/photo-1595560006870-71deded44269?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80" };
+  const image2 = {url: "https://images.unsplash.com/photo-1616464916566-c09efd4272a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=766&q=80"};
+  const image3 = {url: "https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGRlc2lnbmVyJTIwZnVybml0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"};
+  const image4 = {url: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"};
+  const image5 = {url: "https://images.unsplash.com/photo-1560184897-502a475f7a0d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fGRlc2lnbmVyJTIwZnVybml0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"};
+  const image6 = {url: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTB8fGRlc2lnbmVyJTIwZnVybml0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"};
+  const image7 = {url: "https://images.unsplash.com/photo-1609081144289-eacc3108cd03?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxkZXNpZ25lciUyMGZ1cm5pdHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"};
+  const image8 = {url: "https://images.unsplash.com/photo-1506898667547-42e22a46e125?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRlc2lnbmVyJTIwZnVybml0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"};
+  const image9 = {url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGRlc2lnbmVyJTIwZnVybml0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"};
+  
+ 
   return (
     <View style={styles.container}>
 
@@ -57,68 +68,109 @@ export default function Home() {
         <TouchableOpacity>
             <Image source={image}
               style={styles.image1} />
+              <Text style={styles.price1}>Modern Villa Living Sofa </Text>
         </TouchableOpacity>
         
         <TouchableOpacity>
-        <Image source={image}
+        <Image source={image1}
         style={styles.image2} />
+        <Text style={styles.tprice2}>Modern Pink Chair </Text>
         </TouchableOpacity>
+      </View>
 
-        
+
+      <View style={styles.text1}> 
+        <Text style={styles.price1}>$500</Text>  
+        <Text style={styles.price2}>$250</Text>
         
       </View>
-      <View style={styles.text1}> 
-          <Text style={styles.price1}>hello</Text>
-           
-          <Text style={styles.price2}>hello</Text>
-        
-        </View>
 
       <View style={styles.images2}>
       <TouchableOpacity>
-      <Image source={image}
+      <Image source={image2}
         style={styles.image3} />
+        <Text style={styles.price1}>Modern Sofa </Text>
       </TouchableOpacity>
       <TouchableOpacity>
-        <Image source={image}
+        <Image source={image3}
         style={styles.image4} />
+        <Text style={styles.tprice2}>Modern Pool Chair </Text>
        </TouchableOpacity>
       </View>
 
+      
+
+      <View style={styles.text1}> 
+        <Text style={styles.price1}>$550</Text>  
+        <Text style={styles.price2}>$150</Text>
+        
+      </View>
+
+
+
       <View style={styles.images3}>
       <TouchableOpacity>
-      <Image source={image}
+      <Image source={image4}
         style={styles.image5} />
+        <Text style={styles.price1}>Comfortable Sofa </Text>
         </TouchableOpacity>
         <TouchableOpacity>
-        <Image source={image}
+        <Image source={image5}
         style={styles.image6} />
+        <Text style={styles.tprice2}>Modern Double Bed </Text>
         </TouchableOpacity>
       </View>
 
+      <View style={styles.text1}> 
+        <Text style={styles.price1}>$250</Text>  
+        <Text style={styles.price2}>$400</Text>
+        
+      </View>
+
+
+
+
       <View style={styles.images4}>
       <TouchableOpacity>
-      <Image source={image}
+      <Image source={image6}
         style={styles.image7} />
+        <Text style={styles.price1}>Soft Modern Sofa </Text>
         </TouchableOpacity>
         <TouchableOpacity>
-        <Image source={image}
+        <Image source={image7}
         style={styles.image8} />
+        <Text style={styles.tprice2}>White Sofa  </Text>
         </TouchableOpacity>
+      </View>
+
+      <View style={styles.text1}> 
+        <Text style={styles.price1}>$300</Text>  
+        <Text style={styles.price2}>$250</Text>
+        
       </View>
 
 
       <View style={styles.images5}>
       <TouchableOpacity>
-      <Image source={image}
+      <Image source={image8}
         style={styles.image9} />
+        <Text style={styles.price1}>Modern Comfy Chair </Text>
         </TouchableOpacity>
         <TouchableOpacity>
-        <Image source={image}
+        <Image source={image9}
         style={styles.image10} />
+        <Text style={styles.tprice2}>Modern Lovers Bed </Text>
         </TouchableOpacity>
         
       </View>
+
+      <View style={styles.text1}> 
+        <Text style={styles.price1}>$500</Text>  
+        <Text style={styles.price2}>$600</Text>
+        
+      </View>
+
+
 
 
 
@@ -129,7 +181,7 @@ export default function Home() {
 
 
 
-<View style={styles.viewA}>
+<View style={styles.buttonBar}>
 
 <TouchableOpacity>
         <View style={styles.home}>
@@ -154,7 +206,7 @@ export default function Home() {
 
       <TouchableOpacity>
         <View style={styles.account}>
-        <Ionicons name="person" size={26} color="black" />
+        <Ionicons name="person" size={23} color="black" />
         <Text style={styles.accountText}>Account</Text>
         </View>
       </TouchableOpacity>
@@ -206,59 +258,58 @@ const styles = StyleSheet.create({
     fontSize: 15,
     padding:8,
   },
-  viewA:{
+  buttonBar:{
     flexDirection:'row',
-    alignItems:'center',
     padding:15,
-    paddingLeft: 1,
-    margin:1,
+    justifyContent:'space-between',
+    
   },
   sofa:{
     flexDirection:'row',
     alignItems:'center',
-    marginLeft:15,
+    
     marginBottom:20,
 
   },
   home:{
     flexDirection:'row',
     alignItems:'center',
-    marginLeft:9,
+    
     marginBottom:20,
 
   },
   chair:{
    flexDirection:'row',
-    paddingLeft: 25,
+    
     alignItems:'center',
     marginBottom:20,
     
   },
   account:{
     flexDirection:'row',
-     paddingLeft: 15,
+     
      alignItems:'center',
      marginBottom:20,
      
    },
   sofaText:{
-    paddingLeft:10,
+    marginLeft:10,
    fontSize:20,
 
   },
   homeText:{
-    paddingLeft:10,
+  marginLeft:10,
    fontSize:20,
 
   },
   chairText:{
-    paddingLeft:10,
+    marginLeft:10,
     fontSize:17,
 
  
   },
   accountText:{
-    paddingLeft:10,
+    marginLeft:10,
     fontSize:18,
 
  
@@ -363,7 +414,7 @@ const styles = StyleSheet.create({
   },
   text1:{
       flexDirection:'row',
-      marginTop:5,
+      marginTop:0,
      
    
   },
@@ -373,6 +424,10 @@ const styles = StyleSheet.create({
   },
   price2:{
     fontSize:20,
-    marginLeft:180,
+    marginLeft:175,
+  },
+  tprice2:{
+    fontSize:20,
+    marginLeft:23,
   },
 });
