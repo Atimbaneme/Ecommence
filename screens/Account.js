@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View,TouchableOpacity } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';
+import { StyleSheet, Text, View,TouchableOpacity, ScrollView } from 'react-native';
+import { AntDesign,MaterialCommunityIcons,FontAwesome5,Entypo,Ionicons } from '@expo/vector-icons';
 
-export default function Account() {
+export default function Account({navigation}) {
   return (
     <View style={styles.container}>
-    <View style={styles.account}>
+    <View style={styles.accountt}>
         
         <View style={styles.account1}>
             <Text style={styles.text1}>Account</Text>
@@ -29,7 +29,7 @@ export default function Account() {
             Enter your account
         </Text>
     </View>
-    <TouchableOpacity style={styles.touch}>
+    <TouchableOpacity style={styles.touch}  onPress={() => {navigation.navigate ('Signin');}}>
         <View style={styles.mainButton}>
 
             <Text style={styles.button}>Login/Sign in</Text>
@@ -38,6 +38,59 @@ export default function Account() {
         </TouchableOpacity>
 
     </View>   
+
+    <ScrollView>
+
+    </ScrollView>
+
+        
+<View style={styles.buttonBar}>
+
+<TouchableOpacity onPress={() => {navigation.navigate ('Home');}}>
+    <View style={styles.home}>
+      <Entypo name="home" size={30} color="black" />
+
+    </View>
+   
+</TouchableOpacity>
+
+<TouchableOpacity>
+<View style={styles.sofa}>
+      <MaterialCommunityIcons name="sofa" size={30} color="black" />
+      
+</View>
+
+
+
+</TouchableOpacity>
+
+<TouchableOpacity>
+<View style={styles.chair}>
+<FontAwesome5 name="chair" size={25} color="black" />
+</View>
+
+
+
+</TouchableOpacity>
+
+<TouchableOpacity  onPress={() => {navigation.navigate ('Account');}}>
+<View style={styles.account}>
+<Ionicons name="person" size={23} color="black" />
+</View>
+
+
+
+</TouchableOpacity>
+
+
+
+
+</View>
+
+
+
+
+
         
     
       <StatusBar style="auto" />
@@ -52,13 +105,14 @@ const styles = StyleSheet.create({
     
     
   },
-  account:{
+  accountt:{
     padding:37,
     alignItems:'center',
     backgroundColor:'#343434',
     flexDirection:'row',
     paddingLeft:160,
-    paddingTop:40,
+    paddingTop:60,
+    paddingBottom:10,
     
   },
   second:{
@@ -110,5 +164,44 @@ touch:{
     alignItems:'center',
     marginTop:1,
 },
+
+buttonBar:{
+  flexDirection:'row',
+  justifyContent:'space-around',
+  paddingBottom:29,
+  paddingTop:10,
+ 
+  
+  
+  
+},
+sofa:{
+  flexDirection:'row',
+  alignItems:'center',
+  
+
+
+},
+home:{
+  flexDirection:'row',
+  alignItems:'center',
+  
+  
+
+},
+chair:{
+ flexDirection:'row',
+  
+  alignItems:'center',
+
+  
+},
+account:{
+  flexDirection:'row',
+   
+   alignItems:'center',
+  
+   
+ },
 
 });

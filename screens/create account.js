@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View,TouchableOpacity,TextInput, ScrollView } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 
-export default function Create() {
+export default function Create({navigation}) {
   return (
     <View style={styles.container}>
        
@@ -11,7 +11,7 @@ export default function Create() {
                 <View style={styles.signin}>
                     <Text style={styles.text1}>Create a New Account</Text>
                 </View> 
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => {navigation.navigate ('Signin');}}>
                     <AntDesign name="close" size={24} color="black" style={styles.close} />
                     </TouchableOpacity>
                 
@@ -19,10 +19,10 @@ export default function Create() {
 
 
             <View style={styles.page}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => {navigation.navigate ('Signin');}}>
                 <Text style={styles.text2}>Login</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity >
                 <Text style={styles.text3}>Create Account</Text>
                 </TouchableOpacity>
                 

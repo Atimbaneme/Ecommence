@@ -2,7 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity, ImageBackground } from 'react-native';
 
-export default function Welcome() {
+
+
+export default function Welcome({navigation}) {
     const image = { uri: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80" };
   return (
     
@@ -17,9 +19,9 @@ export default function Welcome() {
 
           <Text style={styles.text}>Discover New Furnitures</Text>
 
-          </View>
+          </View> 
 
-          <TouchableOpacity style={styles.touch}>
+          <TouchableOpacity style={styles.touch} onPress={() => {navigation.navigate ('Home');}} >
           <View style={styles.mainButton}>
 
           <Text style={styles.button}>Get Started</Text>

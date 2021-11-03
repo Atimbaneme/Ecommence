@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View,TouchableOpacity,TextInput } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 
-export default function Signin() {
+export default function Signin({navigation}) {
   return (
     <View style={styles.container}>
         
@@ -11,7 +11,7 @@ export default function Signin() {
                 <View style={styles.signin}>
                     <Text style={styles.text1}>Sign In</Text>
                 </View> 
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => {navigation.navigate ('Account');}}>
                     <AntDesign name="close" size={24} color="black" style={styles.close} />
                     </TouchableOpacity>
                 
@@ -22,7 +22,7 @@ export default function Signin() {
                 <TouchableOpacity>
                 <Text style={styles.text2}>Login</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => {navigation.navigate ('Create');}}>
                 <Text style={styles.text3}>Create Account</Text>
                 </TouchableOpacity>
                 
