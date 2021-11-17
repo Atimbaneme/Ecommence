@@ -30,20 +30,11 @@ export default function Home({navigation}) {
         <TextInput style={styles.search} placeholder="SEARCH PRODUCT" />
 
          
-          <TouchableOpacity>
-          <View style={styles.header3}>
-
+          <TouchableOpacity style={styles.header3}>
             <AntDesign name="hearto" size={24} color="black" />
-
-          </View>
-          </TouchableOpacity>
-          
-          <TouchableOpacity>
-          <View style={styles.header4}>
-
+          </TouchableOpacity> 
+          <TouchableOpacity style={styles.header4}>
           <AntDesign name="shoppingcart" size={24} color="black" />
-
-          </View>
           </TouchableOpacity>
 
       </View>
@@ -69,106 +60,92 @@ export default function Home({navigation}) {
             <Image source={image}
               style={styles.image1} />
               <Text style={styles.price1}>Modern Villa Living Sofa </Text>
+              <Text style={styles.price1}>$500</Text> 
         </TouchableOpacity>
         
         <TouchableOpacity onPress={() => {navigation.navigate ('Detail2');}}>
         <Image source={image1}
         style={styles.image2} />
         <Text style={styles.tprice2}>Modern Pink Chair </Text>
+        <Text style={styles.price2}>$250</Text>
         </TouchableOpacity>
       </View>
 
 
-      <View style={styles.text1}> 
-        <Text style={styles.price1}>$500</Text>  
-        <Text style={styles.price2}>$250</Text>
-        
-      </View>
-
       <View style={styles.images2}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => {navigation.navigate ('Detail3');}}>
       <Image source={image2}
         style={styles.image3} />
         <Text style={styles.price1}>Modern Sofa </Text>
+        <Text style={styles.price1}>$550</Text>  
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => {navigation.navigate ('Detail4');}}>
         <Image source={image3}
         style={styles.image4} />
         <Text style={styles.tprice2}>Modern Pool Chair </Text>
+        <Text style={styles.price2}>$150</Text>
        </TouchableOpacity>
       </View>
 
-      
-
-      <View style={styles.text1}> 
-        <Text style={styles.price1}>$550</Text>  
-        <Text style={styles.price2}>$150</Text>
-        
-      </View>
-
-
-
+    
       <View style={styles.images3}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => {navigation.navigate ('Detail5');}}>
       <Image source={image4}
         style={styles.image5} />
         <Text style={styles.price1}>Comfortable Sofa </Text>
+        <Text style={styles.price1}>$250</Text> 
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {navigation.navigate ('Detail6');}}>
         <Image source={image5}
         style={styles.image6} />
         <Text style={styles.tprice2}>Modern Double Bed </Text>
+        <Text style={styles.price2}>$400</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={styles.text1}> 
-        <Text style={styles.price1}>$250</Text>  
-        <Text style={styles.price2}>$400</Text>
+         
         
-      </View>
+        
+      
 
 
 
 
       <View style={styles.images4}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => {navigation.navigate ('Detail7');}}>
       <Image source={image6}
         style={styles.image7} />
         <Text style={styles.price1}>Soft Modern Sofa </Text>
+        <Text style={styles.price1}>$300</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {navigation.navigate ('Detail8');}}>
         <Image source={image7}
         style={styles.image8} />
         <Text style={styles.tprice2}>White Sofa  </Text>
+        <Text style={styles.price2}>$250</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={styles.text1}> 
-        <Text style={styles.price1}>$300</Text>  
-        <Text style={styles.price2}>$250</Text>
-        
-      </View>
+  
 
 
       <View style={styles.images5}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => {navigation.navigate ('Detail9');}}>
       <Image source={image8}
         style={styles.image9} />
         <Text style={styles.price1}>Modern Comfy Chair </Text>
+        <Text style={styles.price1}>$500</Text> 
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {navigation.navigate ('Detail10');}}>
         <Image source={image9}
         style={styles.image10} />
         <Text style={styles.tprice2}>Modern Lovers Bed </Text>
+        <Text style={styles.price2}>$600</Text>
         </TouchableOpacity>
         
       </View>
 
-      <View style={styles.text1}> 
-        <Text style={styles.price1}>$500</Text>  
-        <Text style={styles.price2}>$600</Text>
-        
-      </View>
+      
 
 
 
@@ -234,18 +211,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingTop:50,
+    paddingTop:'15%',
     
   },
   headerOverall:{
-    marginLeft: 2,
-    paddingLeft: 10,
+    marginLeft: '0.5%',
     flexDirection: 'row',
     alignItems: 'center',
     borderRadius: 10,
     borderWidth: 1,
     width: 250,
-    marginBottom:10,
+    marginBottom:'2.5%',
     
 
 
@@ -254,27 +230,29 @@ const styles = StyleSheet.create({
   header3:{
     flexDirection: 'row',
     alignItems: 'center',
-    marginLeft:100,
+    marginLeft:'40%',
     
 
   },
   header4:{
     flexDirection: 'row',
     alignItems: 'center',
-    marginLeft:13,
+    marginLeft:'9%',
+    
+    
     
 
   },
   search:{
     width: 200,
     fontSize: 15,
-    padding:8,
+    padding:'3%',
   },
   buttonBar:{
     flexDirection:'row',
     justifyContent:'space-around',
-    paddingBottom:29,
-    paddingTop:10,
+    paddingBottom:'7%',
+    paddingTop:'2%',
    
     
     
@@ -310,7 +288,7 @@ const styles = StyleSheet.create({
    },
   
   Arrive:{
-      marginTop:20,
+      marginTop:'2%',
   },
   arrive:{
     flexDirection:'row',
@@ -318,111 +296,116 @@ const styles = StyleSheet.create({
   },
   arriveText:{
     fontSize: 35,
-    paddingRight:230,
+    paddingRight:'55%',
   },
   image1:{
-    width:100,
-    height:100,
-    padding:95,
-    marginLeft:5,
+    width:60,
+    height:60,
+    padding:'35%',
+    marginLeft:'2%',
   },
   image2:{
-    width:100,
-    height:100,
-    marginLeft:23,
-    padding:95,
+    width:60,
+    height:60,
+    padding:'35%',
+    marginLeft:'2%',
+   
   },
   images1:{
     flexDirection:'row',
-    marginTop:20,
+    marginTop:'4%',
+    justifyContent:'space-evenly' ,
+    marginLeft:'16%',
    
   },
   image3:{
-    width:100,
-    height:100,
-    padding:95,
-    marginLeft:5,
+    width:60,
+    height:60,
+    padding:'35%',
+    marginLeft:'2%',
   },
   image4:{
-    width:100,
-    height:100,
-    marginLeft:23,
-    padding:95,
+    width:60,
+    height:60,
+    padding:'35%',
+    marginLeft:'2%',
   },
   images2:{
     flexDirection:'row',
-    marginTop:20,
+    marginTop:'4%',
+    justifyContent:'space-evenly' ,
+    marginLeft:'16%',
    
   },
-
   image5:{
-    width:100,
-    height:100,
-    padding:95,
-    marginLeft:5,
+    width:60,
+    height:60,
+    padding:'35%',
+    marginLeft:'2%',
   },
   image6:{
-    width:100,
-    height:100,
-    marginLeft:23,
-    padding:95,
+    width:60,
+    height:60,
+    padding:'35%',
+    marginLeft:'2%',
   },
   images3:{
     flexDirection:'row',
-    marginTop:20,
+    marginTop:'4%',
+    justifyContent:'space-evenly' ,
+    marginLeft:'16%',
    
   },
 
   image7:{
-    width:100,
-    height:100,
-    padding:95,
-    marginLeft:5,
+    width:60,
+    height:60,
+    padding:'35%',
+    marginLeft:'2%',
   },
   image8:{
-    width:100,
-    height:100,
-    marginLeft:23,
-    padding:95,
+    width:60,
+    height:60,
+    padding:'35%',
+    marginLeft:'2%',
   },
   images4:{
     flexDirection:'row',
-    marginTop:20,
+    marginTop:'4%',
+    justifyContent:'space-evenly' ,
+    marginLeft:'16%',
    
   },
   image9:{
-    width:100,
-    height:100,
-    padding:95,
-    marginLeft:5,
+    width:60,
+    height:60,
+    padding:'35%',
+    marginLeft:'2%',
   },
   image10:{
-    width:100,
-    height:100,
-    marginLeft:23,
-    padding:95,
+    width:60,
+    height:60,
+    padding:'35%',
+    marginLeft:'2%',
   },
   images5:{
     flexDirection:'row',
-    marginTop:20,
+    marginTop:'4%',
+    justifyContent:'space-evenly' ,
+    marginLeft:'16%',
    
   },
-  text1:{
-      flexDirection:'row',
-      marginTop:0,
-     
-   
-  },
+  
   price1:{
     fontSize:20,
-    marginLeft:5,
+    marginLeft:'2%',
   },
   price2:{
     fontSize:20,
-    marginLeft:175,
+    marginLeft:'2%',
   },
   tprice2:{
     fontSize:20,
-    marginLeft:23,
+    marginLeft:'2%',
   },
 });

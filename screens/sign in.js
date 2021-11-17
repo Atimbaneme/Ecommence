@@ -11,8 +11,8 @@ export default function Signin({navigation}) {
                 <View style={styles.signin}>
                     <Text style={styles.text1}>Sign In</Text>
                 </View> 
-                    <TouchableOpacity onPress={() => {navigation.navigate ('Account');}}>
-                    <AntDesign name="close" size={24} color="black" style={styles.close} />
+                    <TouchableOpacity style={styles.close} onPress={() => {navigation.navigate ('Account');}}>
+                    <AntDesign name="close" size={24} color="black"  />
                     </TouchableOpacity>
                 
             </View>
@@ -77,8 +77,8 @@ const styles = StyleSheet.create({
   
   },
   signin:{
-      marginTop:70, 
-      marginLeft:170,
+      marginTop:'17%', 
+      marginLeft:'45%',
       
   },
   align:{
@@ -92,58 +92,59 @@ const styles = StyleSheet.create({
   },
   text2:{
     fontSize:23,
-    marginLeft:80,
+    marginLeft:'40%',
 },
 text3:{
     fontSize:23,
-    marginLeft:100,
+    marginLeft:'12%',
 },
 text4:{
-    marginLeft:120,
+    marginLeft:'35%',
     fontSize:20,
     color:'white',
 },
 text5:{
-    marginLeft:60,
+    marginLeft:'15%',
     fontSize:20,
     color:'white',
 },
 text6:{
-    marginLeft:70,
+    marginLeft:'24%',
     fontSize:20,
     color:'white',
 },
   close:{
-    marginTop:70,
-    marginLeft:140,
+    marginTop:'17%', 
+    marginLeft:'32%',
   },
   page:{
       flexDirection:'row',
-      marginTop: 25,
+      marginTop: '5%',
   },
   email:{
-      marginTop:30,
-      marginLeft:20,
+      marginTop:'10%',
+      marginLeft:'4%',
       borderWidth:1,
       width:360,
-      padding:20,
+      padding:'4%',
       borderRadius:20,
       fontSize: 25,
   },
   password:{
-      marginTop:45,
-      marginLeft:260,
+      marginTop:'10%',
+      marginLeft:'63%',
   },
   login:{
       flexDirection:'row',
       alignItems:'center',
       borderWidth:1,
       width:350,
-      marginTop:30,
-      padding:10,
-      marginLeft:30,
+      marginTop:'5%',
+      padding:'2.5%',
+      marginLeft:'5%',
       borderRadius:10,
       backgroundColor:'#00A36C',
+      borderColor:'#00A36C',
     
   },
 
@@ -152,11 +153,12 @@ text6:{
     alignItems:'center',
     borderWidth:1,
     width:350,
-    marginTop:30,
-    padding:10,
-    marginLeft:30,
+    marginTop:'5%',
+    padding:'2.5%',
+    marginLeft:'5%',
     borderRadius:10,
     backgroundColor:'#6F8FAF',
+    borderColor:'#6F8FAF',
   
 },
 apple:{
@@ -164,9 +166,9 @@ apple:{
     alignItems:'center',
     borderWidth:1,
     width:350,
-    marginTop:30,
-    padding:10,
-    marginLeft:30,
+    marginTop:'5%',
+    padding:'2.5%',
+    marginLeft:'5%',
     borderRadius:10,
     backgroundColor:'black',
   

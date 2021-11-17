@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Button, TouchableOpacity, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
 
 
 
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
 
   },
   mainText:{
-    marginTop: 650,
+    marginTop: '150%',
 
   },
   text:{
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   },
   button:{
     fontSize:30,
-    padding:10,
+    padding:'5%',
     
     
   },
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
   },
   touch:{
     alignItems:'center',
-    marginTop:20,
+    marginTop:'5%',
     
 
   },

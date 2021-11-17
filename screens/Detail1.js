@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View,TouchableOpacity,Image,ScrollView } from 'react-native';
+import { StyleSheet, Text, View,TouchableOpacity,Image,ScrollView, Alert } from 'react-native';
 import { AntDesign,Feather,MaterialCommunityIcons } from '@expo/vector-icons';
+
 
 export default function Detail1({navigation}) {
     const image = { uri: "https://images.unsplash.com/photo-1560184897-67f4a3f9a7fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80" };
@@ -10,15 +11,15 @@ export default function Detail1({navigation}) {
 
         
         <View style={styles.header}> 
-        <TouchableOpacity onPress={() => {navigation.navigate ('Home');}}> 
-        <AntDesign name="arrowleft" size={28} color="white" style={styles.icon1} />
+        <TouchableOpacity style={styles.icon1} onPress={() => {navigation.navigate ('Home');}}> 
+        <AntDesign name="arrowleft" size={28} color="white" />
         </TouchableOpacity>
             <Text style={styles.text1}>Details</Text>
-            <TouchableOpacity>
-            <AntDesign name="search1" size={24} color="white" style={styles.icon2} />
+            <TouchableOpacity style={styles.icon2}>
+            <AntDesign name="search1" size={24} color="white"  />
             </TouchableOpacity>
-            <TouchableOpacity>
-            <AntDesign name="shoppingcart" size={24} color="white" style={styles.icon3} />
+            <TouchableOpacity style={styles.icon3}>
+            <AntDesign name="shoppingcart" size={24} color="white"  />
             </TouchableOpacity>
         </View>
 
@@ -47,15 +48,22 @@ export default function Detail1({navigation}) {
        </ScrollView>
 
        <View style={styles.buttomBar}>
+      
         <View style={styles.callB}>  
-       <Feather name="phone" size={30} color="white" style={styles.call} />
+         <TouchableOpacity onPress={() => {Alert.alert ("Call","0541235120")}}>
+         <Feather name="phone" size={30} color="white" style={styles.call} />
+          </TouchableOpacity>
        </View> 
+       
        <View style={styles.add}>
+           
        <MaterialCommunityIcons name="cart-plus" size={30} color="white" style={styles.cart} />
        <Text style={styles.text5}>
            Add  to Cart
        </Text>
+       
        </View>
+       
 
 
        </View> 
@@ -85,8 +93,8 @@ const styles = StyleSheet.create({
   header:{
       
       backgroundColor:'#28282B',
-      paddingTop:60,
-      paddingBottom:10,
+      paddingTop:'14%',
+      paddingBottom:'2%',
       flexDirection:'row',
       alignItems:'center',
       
@@ -94,13 +102,13 @@ const styles = StyleSheet.create({
   text1:{
       fontSize:25,
       color:'white',
-      marginLeft:130,
+      marginLeft:'34%',
   },
   text2:{
     borderWidth:1,
     borderColor:'#8B0000',
     width:80,
-    marginLeft:5,
+    marginLeft:'1.5%',
     color:'white',
     backgroundColor:'#8B0000',
 },
@@ -125,13 +133,13 @@ text5:{
 
 
   icon1:{
-      marginLeft:10,
+      marginLeft:'2.5%',
   },
   icon2:{
-      marginLeft:95,
+      marginLeft:'20%',
   },
   icon3:{
-      marginLeft:25,
+    marginLeft:'5%',
   },
   image1:{
       height:300,
@@ -146,10 +154,10 @@ text5:{
       marginTop:5,
   },
   buttomBar:{
-      paddingBottom:50,
+      paddingBottom:'10%',
       backgroundColor:'#FAF9F6',
       flexDirection:'row',
-      paddingTop:8,
+      paddingTop:'2%',
       alignItems:'center',
   },
   add:{
@@ -157,8 +165,8 @@ text5:{
       borderWidth:1,
       borderColor:'#A47449',
       width:300,
-      marginLeft:25,
-      padding:5,
+      marginLeft:'9%',
+      padding:'1.5%',
       borderRadius:15,
       backgroundColor:'#A47449',
       
@@ -166,13 +174,13 @@ text5:{
   },
   
   cart:{
-    marginLeft:5,
+    marginLeft:'1%',
 },
 callB:{
     backgroundColor:'#A47449',
-    marginLeft:5,
+    marginLeft:'2%',
     borderWidth:1,
-    padding:6,
+    padding:'1.5%',
     borderColor:'#A47449',
     borderRadius:15,
 },

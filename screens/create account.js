@@ -11,8 +11,8 @@ export default function Create({navigation}) {
                 <View style={styles.signin}>
                     <Text style={styles.text1}>Create a New Account</Text>
                 </View> 
-                    <TouchableOpacity onPress={() => {navigation.navigate ('Signin');}}>
-                    <AntDesign name="close" size={24} color="black" style={styles.close} />
+                    <TouchableOpacity style={styles.close} onPress={() => {navigation.navigate ('Signin');}}>
+                    <AntDesign name="close" size={24} color="black"  />
                     </TouchableOpacity>
                 
             </View>
@@ -73,15 +73,13 @@ export default function Create({navigation}) {
                 <Text style={styles.text7}>
                     Already have an account?
                 </Text>
-                <TouchableOpacity>
+                <TouchableOpacity style={styles.log} onPress={() => {navigation.navigate ('Signin');}}>
                 <Text style={styles.text8}>
                     Login
                 </Text>
                 </TouchableOpacity>
             </View>
-            <View style={styles.footer}>
-
-            </View>
+            
  </ScrollView>           
             <StatusBar style="auto" />
             
@@ -96,8 +94,8 @@ const styles = StyleSheet.create({
   
   },
   signin:{
-      marginTop:70, 
-      marginLeft:125,
+    marginTop:'17%', 
+    marginLeft:'29%',
       
   },
   align:{
@@ -111,24 +109,24 @@ const styles = StyleSheet.create({
   },
   text2:{
     fontSize:23,
-    marginLeft:80,
+    marginLeft:'40%',
 },
 text3:{
     fontSize:23,
-    marginLeft:100,
+    marginLeft:'12%',
 },
 text4:{
-    marginLeft:120,
+    marginLeft:'35%',
     fontSize:20,
     color:'white',
 },
 text5:{
-    marginLeft:60,
+    marginLeft:'15%',
     fontSize:20,
     color:'white',
 },
 text6:{
-    marginLeft:70,
+    marginLeft:'24%',
     fontSize:20,
     color:'white',
 },
@@ -137,35 +135,38 @@ text7:{
 },
 text8:{
     fontSize:20,
-    marginTop:20,
+    marginTop:'5%',
 },
   close:{
-    marginTop:70,
-    marginLeft:85,
+    marginTop:'17%', 
+    marginLeft:'19%',
   },
   page:{
       flexDirection:'row',
-      marginTop: 25,
+      marginTop: '5%',
+      marginBottom:'2%',
   },
   email:{
-      marginTop:30,
-      marginLeft:20,
-      borderWidth:1,
-      width:360,
-      padding:20,
-      borderRadius:20,
+    marginTop:'10%',
+    marginLeft:'4%',
+    borderWidth:1,
+    width:360,
+    padding:'4%',
+    borderRadius:20,
+    
   },
   
   login:{
-      flexDirection:'row',
-      alignItems:'center',
-      borderWidth:1,
-      width:350,
-      marginTop:30,
-      padding:10,
-      marginLeft:30,
-      borderRadius:10,
-      backgroundColor:'#00A36C',
+    flexDirection:'row',
+    alignItems:'center',
+    borderWidth:1,
+    width:350,
+    marginTop:'5%',
+    padding:'2.5%',
+    marginLeft:'6%',
+    borderRadius:10,
+    backgroundColor:'#00A36C',
+    borderColor:'#00A36C',
     
   },
 
@@ -174,11 +175,12 @@ text8:{
     alignItems:'center',
     borderWidth:1,
     width:350,
-    marginTop:30,
-    padding:10,
-    marginLeft:30,
+    marginTop:'5%',
+    padding:'2.5%',
+    marginLeft:'6%',
     borderRadius:10,
     backgroundColor:'#6F8FAF',
+    borderColor:'#6F8FAF',
   
 },
 apple:{
@@ -186,20 +188,21 @@ apple:{
     alignItems:'center',
     borderWidth:1,
     width:350,
-    marginTop:30,
-    padding:10,
-    marginLeft:30,
+    marginTop:'5%',
+    padding:'2.5%',
+    marginLeft:'6%',
     borderRadius:10,
     backgroundColor:'black',
   
 },
 down:{
-    marginTop:50,
+    marginTop:'10%',
     alignItems:'center',
 },
-footer:{
-    margin:20,
+log:{
+    marginBottom:'10%',
 },
+
   
   
   
